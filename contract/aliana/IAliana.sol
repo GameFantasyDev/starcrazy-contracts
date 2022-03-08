@@ -8,6 +8,13 @@ contract IAliana is IERC721 {
         public
         returns (uint256);
 
+    function createOfficialAliana(
+        uint256 _matronId,
+        uint256 _sireId,
+        uint256 _genes,
+        address _owner
+    ) public returns (uint256);
+
     function burn(uint256 _tokenID) external;
 
     function isAliana() public returns (bool);
