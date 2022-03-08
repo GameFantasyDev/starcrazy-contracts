@@ -18,6 +18,15 @@ contract IGeneScience {
         uint256 _targetBlock
     ) public returns (uint256);
 
+    /// @dev mix two genes
+    /// @param _genes1 the genes1
+    /// @param _genes2 the genes2
+    function mixGenesBySeed(
+        uint256 _genes1,
+        uint256 _genes2,
+        uint256 seed
+    ) public view returns (uint256);
+
     function geneLpLabor(int256 _id, uint256 _genes)
         public
         pure
